@@ -1,0 +1,65 @@
+/* TEST CLASSES WITH NEW FLEXBOX TO DISPLAY MY SEARCH BAR ITEMS */
+.company-header-links{    /*sets the color we will use in this section*/
+    background-color: #8cb6fa;
+    color: #A68F78;
+    }
+  .company-header-links{
+    display: flex;
+    }
+    ul{
+        list-style-type: none;
+}
+    @media (max-width:745px){
+     .company-header-links > *{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 1px solid red;
+        }
+        .netmatters-icon,
+
+        .phone-icon,
+        .hamburger-icon{
+          flex-grow: 1;
+          
+        }
+        .support-button,
+        .contact-us-btn,
+        .magnify-glass-img,
+        .netmatters-search-bar{
+          display: none;
+        }
+    }
+
+
+
+    .container {
+        padding: 1rem;
+        background-color: darkslategrey;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .item {
+        width: 90vw;
+        font-size: 2rem;
+        line-height: 1.5rem;
+        text-align: center;  
+        background: #e2f0ef;
+        border: 1px solid #51aaa3;
+        color: #51aaa3;
+        margin: 0.375rem; 
+    }
+    .item-1 {
+       flex-basis: 20rem;
+    }
+    .item-2 {
+       flex-basis: 7rem;
+    }
+    .item-3 {
+       flex-basis: 7rem;
+    }
+    .item-1 img {
+        width: 100%;
+        height: 100%;
+     }
