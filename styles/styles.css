@@ -17,7 +17,6 @@
         border: 1px solid red;
         }
         .netmatters-icon,
-
         .phone-icon,
         .hamburger-icon{
           flex-grow: 1;
@@ -32,7 +31,7 @@
     }
 
 
-
+    @media (max-width:745px){
     .container {
         padding: 1rem;
         background-color: darkslategrey;
@@ -63,3 +62,14 @@
         width: 100%;
         height: 100%;
      }
+     input[type=text] {
+        border: 2px solid rgb(197, 197, 197);
+        outline: none;
+        height: 45px;
+        width: 90%;
+        background-color: rgb(235, 230, 230);
+      }
+      input:focus{
+        box-shadow: 1px 1px 10px 3px lightblue;
+      }
+    }
