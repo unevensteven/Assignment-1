@@ -1,5 +1,14 @@
-/* TEST CLASSES WITH NEW FLEXBOX TO DISPLAY MY SEARCH BAR ITEMS */
-.company-header-links{    /*sets the color we will use in this section*/
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;   
+}
+
+
+
+/* 
+/* TEST CLASSES WITH NEW FLEXBOX TO DISPLAY MY SEARCH BAR ITEMS 
+.company-header-links{    /*sets the color we will use in this section
     background-color: #8cb6fa;
     color: #A68F78;
     }
@@ -28,7 +37,7 @@
         .netmatters-search-bar{
           display: none;
         }
-    }
+    } */
 
 
     @media (max-width:745px){
