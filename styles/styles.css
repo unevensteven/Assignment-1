@@ -4,41 +4,6 @@
  box-sizing: border-box;   
 }
 
-
-
-/* 
-/* TEST CLASSES WITH NEW FLEXBOX TO DISPLAY MY SEARCH BAR ITEMS 
-.company-header-links{    /*sets the color we will use in this section
-    background-color: #8cb6fa;
-    color: #A68F78;
-    }
-  .company-header-links{
-    display: flex;
-    }
-    ul{
-        list-style-type: none;
-}
-    @media (max-width:745px){
-     .company-header-links > *{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        border: 1px solid red;
-        }
-        .netmatters-icon,
-        .phone-icon,
-        .hamburger-icon{
-          flex-grow: 1;
-          
-        }
-        .support-button,
-        .contact-us-btn,
-        .magnify-glass-img,
-        .netmatters-search-bar{
-          display: none;
-        }
-    } */
-
     @media (min-width:1250px) {
       .container {
         padding: 1rem;
@@ -89,8 +54,6 @@
         display:none;
     }
   }
-
-
 
     @media (min-width:980px) and (max-width:1249px){
       .container {
@@ -145,9 +108,6 @@
 }
 
 
-
-
-
 @media (min-width:760px) and (max-width:979px){
   .container {
     padding: 1rem;
@@ -182,7 +142,6 @@
   flex-grow: 1;
   order: 3;
 }
-
 /* These items do not display outside 760 - 979px range */
 .item-2,
 .item-5,
@@ -243,3 +202,97 @@
         display: none;
       }
     }
+
+
+
+/* add the paper plane to the contact button *
+  content     : "";
+  position    :absolute;
+  top         :7%;
+  margin-left: 5px;
+  width       :30px;
+  height      :30px;
+  background-image: url('../img/paper-plane.png');
+  background-size : contain;
+  background-repeat: no-repeat;
+}
+/* add the mouse icon to the support button 
+  content     : "";
+  position    :absolute;
+  top         :7%;
+  margin-left: 5px;
+  width       :30px;
+  height      :30px;
+  background-image: url('../img/mouse_icon.png');
+  background-size : contain;
+  background-repeat: no-repeat;
+}
+/* styling the search bar *
+.header-search-bar input{
+  background-color: rgb(223, 220, 220);
+  width: 85vw;
+  height: 45px;
+  outline: 1px solid hsla(0,0%,100%,.2);
+  border:2px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  
+}
+
+
+
+/* style the support and contact buttons 
+.upper-header-links .support-btn button{
+  color:white;
+  font-size: 1.3em;
+  background-color: #5491db;
+  padding-left: 35px;
+  padding-right: 35px;
+  height:56px;
+  border: none;
+  border-radius: 2px; 
+  transition: filter 0.2s ease;
+}
+.upper-header-links .contact-btn button{
+  color:white;
+  font-size: 1.3em;
+  background-color: rgb(165, 165, 165);
+  padding-left: 35px;
+  padding-right: 35px;
+  height:56px;
+  border: none;
+  border-radius: 2px;
+  transition: filter 0.2s ease;
+}
+
+
+
+
+ /* Style the .lower-header */
+
+ .lower-header{
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  background-color: #333544;
+  color: white;
+   
+}
+
+.lower-header ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lower-header-services{
+  color: white;
+  margin-left: 2vw;
+}
+
+/* hides .lower-header  when the screen size is less than 990px */
+@media (max-width:979px){
+  .lower-header{
+    display: none;
+  }
+} 
