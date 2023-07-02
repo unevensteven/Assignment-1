@@ -3,7 +3,78 @@
  padding:0;
  box-sizing: border-box;   
 }
+/* Styling both buttons item-5 and item-6 */
+.container .item-5 button{
+  color:white;
+  font-size: 0.7em;
+  background-color: #5491db;
+  padding-left: 35px;
+  padding-right: 15px;
+  height:56px;
+  border: none;
+  border-radius: 2px; 
+  transition: filter 0.2s ease;
+}
+.container .item-6 button{
+  color:white;
+  font-size: 0.7em;
+  background-color: rgb(165, 165, 165);
+  padding-left: 35px;
+  padding-right: 15px;
+  height:56px;
+  border: none;
+  border-radius: 2px;
+  transition: filter 0.2s ease;
+}
+/* add the mouse icon to the support button */
+.item-5{
+  position: relative;
+  padding-left: 5px;
+  overflow: hidden;
+}
+.item-5::before{
+  content     : "";
+  position    :absolute;
+  top         :25%;
+  margin-left: 1px;
+  width       :30px;
+  height      :30px;
+  background-image: url('../img/mouse_icon.png');
+  background-size : contain;
+  background-repeat: no-repeat;
+}
 
+/* add the paper plane to the contact button */
+.item-6{
+  position: relative;
+  padding-left: 5px;
+  overflow: hidden;
+}
+
+.item-6::before{
+  content     : "";
+  position    :absolute;
+  top         :25%;
+  margin-left: 1px;
+  width       :30px;
+  height      :30px;
+  background-image: url('../img/paper-plane.png');
+  background-size : contain;
+  background-repeat: no-repeat;
+  
+}
+/* Hover effect on the contact and suport buttons */
+.item-5:hover button{
+  background-color: #3e63b3;
+  cursor: pointer;
+}
+.item-6:hover button{
+  background-color: rgb(119, 118, 118);
+  cursor: pointer;
+}
+
+
+/* Media Queries to style upper header and show which items at which breakpoints */
     @media (min-width:1250px) {
       .container {
         padding: 1rem;
@@ -205,28 +276,8 @@
 
 
 
-/* add the paper plane to the contact button *
-  content     : "";
-  position    :absolute;
-  top         :7%;
-  margin-left: 5px;
-  width       :30px;
-  height      :30px;
-  background-image: url('../img/paper-plane.png');
-  background-size : contain;
-  background-repeat: no-repeat;
-}
-/* add the mouse icon to the support button 
-  content     : "";
-  position    :absolute;
-  top         :7%;
-  margin-left: 5px;
-  width       :30px;
-  height      :30px;
-  background-image: url('../img/mouse_icon.png');
-  background-size : contain;
-  background-repeat: no-repeat;
-}
+
+
 /* styling the search bar *
 .header-search-bar input{
   background-color: rgb(223, 220, 220);
@@ -239,34 +290,6 @@
 }
 
 
-
-/* style the support and contact buttons 
-.upper-header-links .support-btn button{
-  color:white;
-  font-size: 1.3em;
-  background-color: #5491db;
-  padding-left: 35px;
-  padding-right: 35px;
-  height:56px;
-  border: none;
-  border-radius: 2px; 
-  transition: filter 0.2s ease;
-}
-.upper-header-links .contact-btn button{
-  color:white;
-  font-size: 1.3em;
-  background-color: rgb(165, 165, 165);
-  padding-left: 35px;
-  padding-right: 35px;
-  height:56px;
-  border: none;
-  border-radius: 2px;
-  transition: filter 0.2s ease;
-}
-
-
-
-
  /* Style the .lower-header */
 
  .lower-header{
@@ -275,14 +298,13 @@
   height: 100px;
   background-color: #333544;
   color: white;
-   
 }
 
 .lower-header ul{
   display: flex;
   list-style: none;
   justify-content: space-around;
-  align-items: center;
+  padding-top: 50px;
 }
 
 .lower-header-services{
