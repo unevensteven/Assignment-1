@@ -3,6 +3,8 @@
  padding:0;
  box-sizing: border-box;   
 }
+
+
 /* Styling both buttons item-5 and item-6 */
 .container .item-5 button{
   color:white;
@@ -293,25 +295,117 @@
  /* Style the .lower-header */
 
  .lower-header{
-  flex-direction: row;
+  /* flex-direction: row; */
   width: 100%;
   height: 100px;
   background-color: #333544;
   color: white;
 }
 
-.lower-header ul{
+ .lower-header ul{
   display: flex;
   list-style: none;
   justify-content: space-around;
-  padding-top: 50px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
-.lower-header-services{
-  color: white;
-  margin-left: 2vw;
+.lower-header li {
+  position: relative;
+  text-align: center;
+  padding: 50px;
 }
 
+/* styling the lower header and where each image will fit / be*/
+.bespoke,
+.it-support,
+.dig-marketing,
+.telecoms,
+.web-design,
+.cyber,
+.developer{
+  position: relative;
+  overflow: hidden;
+}
+
+.bespoke::before{
+  content     : "";
+  position    :absolute;
+  top         : 40%;
+  left        : 65%;
+  transform   : translate(-150%, -150%);
+  width       :25px;
+  height      :25px;
+  background-image: url('../img/laptop-file-solid.jpg');
+  background-size : cover;
+}
+
+.it-support::before{
+  content     : "";
+  position    :absolute;
+  top         : 15%;
+  left        : 40%;
+  transform   : translate(-150%,- 150%);
+  width       :25px;
+  height      :25px;
+  background-image: url('../img/desktop-solid.jpg');
+  background-size : cover;
+}
+.dig-marketing::before{
+  content     : "";
+  position    :absolute;
+  top         : 15%;
+  left        : 43%;
+  transform   : translate(-150%,- 150%);
+  width       :25px;
+  height      :25px;
+  background-image: url('../img/signal-solid.jpg');
+  background-size : cover;
+}
+
+.telecoms::before{
+  content     : "";
+  position    :absolute;
+  top         : 15%;
+  left        : 43%;
+  transform   : translate(-150%,- 150%);
+  width       :25px;
+  height      :25px;
+  background-image: url('../img/telephone-solid.png');
+  background-size : cover;
+}
+.web-design::before{
+  content     : "";
+  position    :absolute;
+  top         : 15%;
+  left        : 40%;
+  width       :22px;
+  height      :22px;
+  background-image: url('../img/code-solid.jpg');
+  background-size : cover;
+}
+
+.cyber::before{
+  content     : "";
+  position    :absolute;
+  top         : 15%;
+  left        : 40%;
+  width       :22px;
+  height      :22px;
+  background-image: url('../img/shield-solid.jpg');
+  background-size : cover;
+}
+.developer::before{
+  content     : "";
+  position    :absolute;
+  top         : 15%;
+  left        : 40%;
+  width       :22px;
+  height      :22px;
+  background-image: url('../img/graduation-cap-solid.jpg');
+  background-size : cover;
+}
 /* hides .lower-header  when the screen size is less than 990px */
 @media (max-width:979px){
   .lower-header{
