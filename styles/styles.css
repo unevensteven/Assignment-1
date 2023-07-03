@@ -2,6 +2,17 @@ body {
   background-color: black;
 }
 
+/*   background-color: var(--bespoke);  */
+:root {
+  --bespoke: #67809f; 
+  --itsupport: #4183d7;
+  --digmarket: #2ecc71;
+  --telecoms:  #d64541;
+  --webdesign:#926fb1;
+  --cyber:#f62459;
+  --developer:#ce4125;
+}
+
 .container{
   display: flex;
   justify-content: center;
@@ -23,67 +34,64 @@ body {
  
 }
 
-.card:hover{
-  cursor: pointer;
-  transform: translateY(-5px);
-  color: white;
-  background-color: #67809f;
-  }
-
-.card-image {
+/* .card-image {
   height:180px;
   margin-bottom: 15px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
+
 /* Styling plain colored circles for each card */
 .car-1{
-  background-color: #67809f;
+  background-color: var(--bespoke);
   width: 75px;
   height: 75px;
   border-radius:50%;
+  margin-top: 10px;
 }
 .car-2{
   background-color: #4183d7;
   height: 75px;
   width: 75px;
   border-radius: 50%;
+  margin-top: 10px;
 }
 .car-3{
   background-color: #2ecc71;
   height: 75px;
   width: 75px;
   border-radius: 50%;
+  margin-top: 10px;
 }
 .car-4{
   background-color: #d64541;
   height: 75px;
   width: 75px;
   border-radius: 50%;
+  margin-top: 10px;
 }
 .car-5{
   background-color: #926fb1;
   height: 75px;
   width: 75px;
   border-radius: 50%;
+  margin-top: 10px;
 }
 .car-6{
   background-color: #f62459;
   height: 75px;
   width: 75px;
   border-radius: 50%;
+  margin-top: 10px;
 }
 .car-7{
   background-color: #ce4125;
   height: 75px;
   width: 75px;
   border-radius: 50%;
+  margin-top: 10px;
 }
-
-
-
-
 
 .card h2{
   padding: 10px;
@@ -93,7 +101,6 @@ body {
 }
 
 .card a{
-  background-color: rgb(74, 136, 165);
   color: white;
   border-radius: 5px;
   padding: 15px;
@@ -101,13 +108,102 @@ body {
   text-align: center;
   margin: 50px;
   text-decoration: none;
- 
+ } 
 
+ .card:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+  color: white;
+  }
+  .card:hover a{
+    background-color: white;
+  }
+.bespoke:hover{
+  background-color: var(--bespoke);
+  transition: transform ease 0.5s;
 }
-
-
-/* 
-.card > #card-1:hover{
+.bespoke:hover .car-1{
   background-color: white;
-  color: #67809f;
-} */
+}
+.support:hover{
+  background-color: var(--itsupport);
+}
+.support:hover .car-2{
+  background-color: white;
+}
+.marketing:hover{
+  background-color: var(--digmarket);
+}
+.marketing:hover .car-3{
+  background-color: white;
+}
+.telecom:hover{
+  background-color: var(--telecoms);
+}
+.telecom:hover .car-4{
+  background-color: white;
+}
+.web:hover{
+  background-color: var(--webdesign);
+}
+.web:hover .car-5{
+  background-color: white;
+}
+.security:hover{
+  background-color: var(--cyber);
+}
+.security:hover .car-6{
+  background-color: white;
+}
+.developer:hover{
+  background-color: var(--developer);
+}
+.developer:hover .car-7{
+  background-color: white;
+}
+.developer:hover a{
+  color: var(--developer);
+}
+.bespoke a{
+  background-color: var(--bespoke);
+  color: white;
+}
+.bespoke:hover a{
+  color: var(--bespoke);
+}
+.support a{
+  background-color: var(--itsupport);
+}
+.support:hover a{
+  color: var(--itsupport);
+}
+.marketing a{
+  background-color: var(--digmarket);
+}
+.marketing:hover a{
+  color: var(--digmarket);
+}
+.telecom a{
+  background-color: var(--telecoms);
+}
+.telecom:hover a{
+  color: var(--telecoms);
+}
+.web a{
+  background-color: var(--webdesign);
+}
+.web:hover a{
+  color: var(--webdesign);
+}
+.security a{
+  background-color: var(--cyber);
+}
+.security:hover a{
+  color: var(--cyber)
+}
+.developer a{
+  background-color: var(--developer);
+}
+.developer:hover a{
+  color: var(--developer);
+}
