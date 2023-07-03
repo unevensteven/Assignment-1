@@ -26,7 +26,7 @@ body {
 .card:hover{
   cursor: pointer;
   transform: translateY(-5px);
-  color: aliceblue;
+  color: white;
   background-color: #67809f;
   }
 
@@ -37,31 +37,53 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+/* Styling plain colored circles for each card */
 .car-1{
-  /* background-image: url(/img/f_logo_blue.png); */
-  height: 75px;
-  width: 75px;
   background-color: #67809f;
-  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  border-radius:50%;
 }
-.car-1:hover{
-  background-color: white;
-}
-
 .car-2{
-  background-image: url(/img/hamburger.png);
+  background-color: #4183d7;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.car-3{
+  background-color: #2ecc71;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.car-4{
+  background-color: #d64541;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.car-5{
+  background-color: #926fb1;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.car-6{
+  background-color: #f62459;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.car-7{
+  background-color: #ce4125;
   height: 75px;
   width: 75px;
   border-radius: 50%;
 }
 
-.car-3{
-  background-image: url(/img/Instagram_logo_2016.svg.webp);
-  height: 75px;
-  width: 75px;
-  border-radius: 50%;
-}
+
+
+
 
 .card h2{
   padding: 10px;
@@ -84,8 +106,8 @@ body {
 }
 
 
-
+/* 
 .card > #card-1:hover{
   background-color: white;
   color: #67809f;
-}
+} */
