@@ -590,6 +590,7 @@
 text-decoration: none;
 }
 /*Lower header code and styling - where each image will fit/be*/
+
 .bespoke-sw,
 .it-support,
 .dig-marketing,
@@ -687,3 +688,73 @@ text-decoration: none;
     display: none;
   }
 } 
+
+ /* Hero Image - Text Styling */
+ @media (min-width:979px){
+  .hero-text{
+    font-size: 2em;
+    text-align: left;
+    text-justify: auto;
+  }
+  .hero-text p{
+    font-size: 0.8em;
+  }
+}
+@media (max-width:979px){
+  .hero-text{
+    line-height: 30px;
+  }
+}
+
+@media (max-width:759px){
+  .hero-text{
+    margin-top: 40px;
+   
+  }
+}
+  
+  /* Hero Image */
+
+@media (min-width:990px){
+  .hero-image{
+    margin-top: -90px
+  }
+}
+  @media (max-width:989px){
+    .hero-image{
+      margin-top: -90px
+    }
+  }
+@media (max-width:759px){
+  .hero-image{
+    margin-top: -70px;
+  }
+}
+  
+
+   .hero-text{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-20%, -20%);
+   }
+  
+   .hero-btn{
+    background-color: rgb(177, 105, 177);
+    border-style: none;
+    color: white;
+    padding-top: 18px ;
+    padding-bottom: 18px;
+    padding-left: 18px;
+    padding-right: 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    
+   }
+   .hero-btn:hover{
+    background-color: rgb(122, 69, 122);
+    cursor: pointer;
+   }
+  
+ 
