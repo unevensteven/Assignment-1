@@ -15,6 +15,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .card{
   display: flex;
   flex-direction: column;
@@ -23,143 +24,75 @@
   padding-left: 50px;
   padding-right: 50px;
   background-color: white;
-  width: 95vw;
-  max-width: 700px;
-  height: auto;
+  width:80vw;
+  height: 290px;
   border: 1px solid gray;
   margin: 10px;
   border-radius: 15px;
   transition: transform ease 0.5s;
   justify-content: center;
   align-items: center;
- 
-}
-/* Do we need to include the .card from directly above still??? */
-@media (min-width:760px) and (max-width:979px){
-  .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1em;
-    justify-content: space-evenly;
   }
-  .bespoke,
-  .support,
-  .marketing{
-    width: 720px;
-  }
-  .telecom,
-  .web{
-    max-width: 250px;
-    flex-basis: 40%;
-   }
-  .security,
-  .developer{
-    max-width: 250px;
-    flex-basis: 35%;
-  }
-}
-
-@media (min-width:1229px){
-  .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1em;
-    }
-  .bespoke,
-  .support,
-  .marketing,
-  .telecom{
-    width:200px;
-   flex-basis: 20%;
-  }
-  .web,
-  .security,
-  .developer{
-    width: 400px;
-    flex-basis: 30%;
-   }
-}
-
-@media (min-width:980px) and (max-width:1229px){
-  .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1em;
-    }
-    .bespoke,
-    .support,
-    .marketing{
-      width:280px;
-     flex-basis: 30%;
-    }
-    .telecom,
-    .web{
-      flex-basis: 50%;
-     }
-     .security,
-     .developer{
-       flex-basis: 50%;
-     }
-  }
-}
 
 
-/* Styling plain colored circles for each card */
+/* Styling colored circles for each card */
 .car-1{
   background-color: var(--bespoke);
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
   border-radius:50%;
   margin-top: 10px;
 }
 .car-2{
   background-color: #4183d7;
-  height: 75px;
-  width: 75px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 .car-3{
   background-color: #2ecc71;
-  height: 75px;
-  width: 75px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 .car-4{
   background-color: #d64541;
-  height: 75px;
-  width: 75px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 .car-5{
   background-color: #926fb1;
-  height: 75px;
-  width: 75px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 .car-6{
   background-color: #f62459;
-  height: 75px;
-  width: 75px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 .car-7{
   background-color: #ce4125;
-  height: 75px;
-  width: 75px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 
 .card h2{
-  padding: 10px;
+  padding: 3px;
 }
 .card p{
-  padding: 10px;
+  padding: 3px;
+  margin: -25px;
+  line-height: 20px;
 }
 
 .card a{
@@ -168,9 +101,66 @@
   padding: 15px;
   display: block; 
   text-align: center;
-  margin: 50px;
+  margin-top: 30px;
   text-decoration: none;
  } 
+
+
+@media (min-width:769px){
+  .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+.telecom, 
+.web{
+  flex-basis: calc(35% - 1em);
+  max-width: calc(35% - 1em);
+  }
+  .security,
+  .developer{
+    flex-basis: calc(35% - 1em);
+    max-width: calc(35% - 1em);
+  }
+}
+
+@media (min-width:960px) and (max-width:1249px){
+  .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .bespoke,
+  .support,
+  .marketing{
+    flex-basis: calc(20% - 1em);
+    max-width: calc(20% - 1em);
+  }
+}
+@media (min-width:1250px){
+  .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .bespoke,
+  .support,
+  .marketing{
+    flex-basis: calc(23% - 1em);
+    width: calc(23% - 1em);
+    
+  }
+  .telecom, 
+  .web,
+  .security,
+  .developer{
+    flex-basis: calc(15% - 1em);
+    width: calc(15 - 1em);
+  }
+}
 
  .card:hover{
   cursor: pointer;
