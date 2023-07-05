@@ -36,6 +36,7 @@
 
 
 /* Styling colored circles for each card */
+
 .car-1{
   background-color: var(--bespoke);
   width: 65px;
@@ -161,6 +162,10 @@
     width: calc(15 - 1em);
   }
 }
+
+
+/* end of media Queries */
+
 
  .card:hover{
   cursor: pointer;
