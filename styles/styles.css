@@ -1397,3 +1397,18 @@ padding-left: 5px;
 text-decoration: none;
 }
 
+.view-services{
+  display:flex;
+  
+  text-decoration: none;
+}
+.view-services:hover{
+  text-decoration: none;
+}
+/* Remove View Our Work at 759px sp it displays below the cards */
+@media (max-width:760px){
+  .view--our-work{
+    display: none;
+  }
+
+}
