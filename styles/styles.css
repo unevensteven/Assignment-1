@@ -1012,5 +1012,154 @@ text-decoration: none;
       padding-top: 330px; 
      }
   
+/* case-study image styling */
 
+.case-studies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.case-studies img{
+  max-width: fit-content;
+  max-width: fit-content;
+}
 
+/* Styling for the Email Sign-up sections styling */
+.signup{
+  background-color: #DDDDDD;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.newsletter-signup{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+/* ============================================ */
+
+.sign-up-label {
+  display: block;
+  margin-left:8%;
+}
+/* Adjust the display of text boxes at breakpoint 959px*/
+@media (min-width:960px){
+  .newsletter-row{
+    display: flex;
+    width: 720px;
+    margin-left: 4vw;
+  }
+  .sign-up{
+    flex-direction: row;
+  }
+  .email-newsletter-style{
+    width: 450px;
+    flex: 1;
+    margin-left: 2vw;
+    margin-left: -20px;
+    height: 45px;
+    border: 2px solid rgb(196, 194, 194);
+    width: 450px;
+    background-color: #EBE6E6;
+  }
+}
+@media (min-width:1200px){
+  .email-newsletter-style{
+    width: 565px;
+    flex: 1;
+    margin-left: 2vw;
+    margin-left: -20px;
+    height: 45px;
+    border: 2px solid rgb(196, 194, 194);
+  }
+}
+
+  .sign-up-text-input{
+      margin-left: 8%; 
+    }
+  /* ============================================= */
+
+  .privacy-checkbox{
+    margin-left:6%;
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+.privacy-checkbox:checked{   /*When the box is checked the background becomes black*/
+  background-color: black;
+}
+.privacy-checkbox:checked::before{ /*Adds checkmark when the box is checked*/
+    content: "\2714";
+    display:block;
+    font-size: 1.6em;
+    color: white;
+    text-align: center;
+}
+.txt-margin{
+    margin-left:6%;
+    
+}
+.your-name{
+    flex:1;
+    padding-bottom: 7px;
+    margin-left: 2vw;
+    margin-left: -20px;
+}   
+
+.your-email{
+    flex:1;
+    margin-left: -20px;
+}
+
+/* Styling for the text input boxes (email newsletter) screen below 959px*/
+@media (max-width: 959px){
+  .email-newsletter-style{ 
+    flex: 1;
+    margin-left: 2vw;
+    margin-left: -20px;
+    height: 45px;
+    border: 2px solid rgb(196, 194, 194);
+    width: 74vw;
+    max-width: 720px;
+    background-color: #EBE6E6;
+  }
+}
+
+/* red asterix style */
+.color-asterix::after {
+  content: "*";
+  font-weight: bold;
+  color: rgb(241, 29, 29)   
+  }
+  
+/* The input style boxes when they have focus */
+  /* input[type=text]:focus { */
+    .email-newsletter-style:focus{
+      box-shadow: 1px 1px 5px rgb(87, 170, 197), -2px -2px 5px rgb(87, 170, 197);
+      outline: none;
+      border-top: none;
+      background-color: #EBE6E6
+  }
+    
+  /* changes the color of the privacy policy link */
+  #priv-pol{
+      color: black;
+  }
+      /* styles the subscribe button */
+  .subscribe-btn{
+      color: white;
+      font-size: 17px;
+      background-color: #22242E;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-left: 8%;
+  }
