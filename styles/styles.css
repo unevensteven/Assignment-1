@@ -757,4 +757,134 @@ text-decoration: none;
     cursor: pointer;
    }
   
- 
+  /* Awards image styling */
+.awards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.awards img{
+  max-width: fit-content;
+  max-width: fit-content;
+}
+
+
+/* welcome Section */
+
+
+.welcome-background-colour{
+  background-color: #333544;
+  width: 100vw;
+}
+.welcome{
+  display: inline-block;
+  align-items: center;
+  background-color: #333544;
+  color: #DDDDDD;
+}
+
+/* At 759px the width becomes fixed */
+@media (min-width:760px){
+  .welc-net p{
+    max-width: 450px;
+    padding-left: 10px;
+  }
+  .what-clients{
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1290px){
+  .welc-net p{
+    max-width: 580px;
+  }
+  .what-clients{
+    max-width: 580px;
+  }
+}
+/* at 99px+ the display becomes a row */
+@media (min-width:990px){
+.welcome{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+} 
+
+
+.welc-net{
+    /* margin-left: 8vw; */
+    padding-right: 12px;
+}
+.welc-net h1{
+  font-size: 36px;
+}
+.welc-net p{
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.what-clients{
+    margin-right: 8vw;
+    padding-left: 12px;
+}
+.what-clients h1{
+  font-size: 36px;
+  line-height: 23px;
+}
+.what-clients p{
+  line-height: 33px;
+  letter-spacing: 0.4px;
+}
+
+.quote-text{
+    color: #A68F78;
+}
+
+.anchor-txt{
+    color: white;
+    text-decoration: none;
+  }
+  .anchor-txt:hover{
+    text-decoration: underline;
+  }
+
+  /* Applied to `why-choose-us` & `our-culture` btns*/
+  .why-choose-us{   
+    color: white;
+    background-color: #252527;
+    padding: 22px;
+    border-radius: 8px;
+    border-style: none;
+    margin-bottom: 25px;
+  }
+  /* `why-choose-us`  `our-culture` btns :hover*/
+  .why-choose-us:hover{
+    background-color: #121318;
+  }
+
+  .google-rvw-btn{
+    background-color: #4387f6;  
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border-style: none;
+    margin-bottom: 25px;
+    margin-top: 20px;
+   }
+   
+   .google-rvw-btn:hover{
+    background-color:#2a6fdf;
+}
+   .trust-rvw-btn{
+    background-color:#00b67b ;
+    color: white;
+    padding: 15px; 
+    border-radius: 8px;
+    border-style: none;
+    margin-bottom: 0;
+  }
+  
+  .trust-rvw-btn:hover{
+    background-color: #25A25A;
+  }
+
