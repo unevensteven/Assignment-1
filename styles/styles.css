@@ -888,3 +888,129 @@ text-decoration: none;
     background-color: #25A25A;
   }
 
+
+
+
+
+/* Latest News Section styling ===========   */
+  
+ /* .latest-news{     ====================== container 
+      
+      justify-content: center;
+      margin-left: 8vw;  
+   }
+   */
+    /*Style the three buttons in the articles to read more  */
+    .btn-1{
+      color: white;
+      background-color: rgb(117, 190, 184);
+      
+    }
+
+    .btn-2{
+      color: white;
+      background-color:  rgb(117, 190, 184);
+    }
+    .btn-3{
+      color: white;
+      background-color: rgb(150, 109, 150);
+    }
+
+   .partial-line{
+    border-top: 2px solid black;
+    width: 250px;
+    margin-left: 40px;
+    
+   }
+
+   /* Display .latest-news as a column upto 759px */
+   @media (max-width:759px){
+    .latest-news{
+      flex-direction: column;
+    }
+   }
+  
+   @media (min-width:760px) and (max-width:1239px){
+    .latest-news{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+    .latest-news > .article:nth-child(3) {
+      display: none;
+    }
+    .article{
+      width:345px;
+    }
+    .article-1{
+      width:345px;
+    }
+    .article-info{
+      width:395px;
+    }
+  }
+
+  @media screen and (min-width: 1240px) {
+    .latest-news{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .article {
+      flex-basis: 1 0 30%;    
+   }
+  .article-1{
+    max-width:454px;
+  }
+}
+
+    .article {  /* ========================== card */
+      color: black;
+      
+      min-height: 65vh;
+      max-height: 91vh;
+      transform: translateY(8px);
+      transition: transform 0.8s ease;
+      margin: 30px;
+      border:1px solid gray;
+      border-radius: 4px;
+    }
+    
+    .article:hover{
+      cursor: pointer;
+      transform: translateY(-8px);
+      transition: transform 0.8s ease;
+    }
+  
+    .article-info{  /* ====================== card.image  */
+      height:100px;
+      margin-bottom: 1px;
+      border: 1px solid red;
+    }
+  
+    .article-1{
+      background-image: url(../img/Now-hiring-digital-marketing.jpg);
+      background-size: 100% auto; 
+      background-repeat: no-repeat;
+      padding-top: 330px;  
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+    }
+
+
+    .article-2{
+      background-image: url(../img/hiring-ppc-specialist.png);
+      background-size: 100% auto; 
+      background-repeat: no-repeat;
+      padding-top: 330px; 
+     }
+
+     .article-3{
+      background-image: url(../img/inceni-case-study.png);
+      background-size: 100% auto; 
+      background-repeat: no-repeat;
+      padding-top: 330px; 
+     }
+  
+
+
