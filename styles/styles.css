@@ -1135,7 +1135,7 @@ text-decoration: none;
   font-weight: bold;
   color: rgb(241, 29, 29)   
   }
-  
+
 /* The input style boxes when they have focus */
   /* input[type=text]:focus { */
     .email-newsletter-style:focus{
@@ -1163,3 +1163,208 @@ text-decoration: none;
       padding-bottom: 15px;
       margin-left: 8%;
   }
+
+  .about-container{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    background-color    : #333544;
+    width: 100%;
+  }
+
+  /* These are the elements I will be using to style as a grid */
+   /* use a media query to show these at full screen */
+
+   @media (min-width:1261px){
+    .socials {
+      grid-column: 1;
+    }
+    .item1 {
+      grid-column: 2;
+    }
+    .item2 {
+      grid-column: 3;
+    }
+    .item3 {
+      grid-column: 4;
+    }
+    .item4 {
+      grid-column: 5;
+    }
+}
+
+@media (max-width:1260px){
+  .socials {
+grid-column: 1;
+}
+.item1 {
+grid-row-start: 2;
+grid-column: 1;
+}
+.item2 {
+grid-row-start: 2;
+grid-column: 2;
+}
+.item3 {
+grid-row-start: 2;
+grid-column: 3;
+}
+.item4 {
+grid-row-start: 2;
+grid-column: 4;
+  }
+}
+
+@media (max-width:979px){
+    
+  .socials {
+    grid-column: 1;
+    
+  }
+   .item1 {
+    grid-row-start: 2;
+    grid-column: 1;
+    
+  }
+   .item2 {
+    grid-row-start: 2;
+    grid-column: 2;
+    
+  }
+   .item3 {
+    grid-row-start: 3;
+    grid-column: 1;
+    
+  }
+   .item4 {
+    grid-row-start: 3;
+    grid-column: 2;
+    
+  }
+} 
+
+  @media (max-width:759px){
+  .socials {
+    grid-column: 1;
+  }
+   .item1 {
+    grid-row-start: 2;
+    grid-column: 1;
+  }
+   .item2 {
+    grid-row-start: 3;
+    grid-column: 1;
+  }
+   .item3 {
+    grid-row-start: 4;
+    grid-column: 1;
+  }
+   .item4 {
+    grid-row-start: 5;
+    grid-column: 1;
+  }
+} 
+
+/* =================================  */
+.about-item{
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.about-h4{
+font-size: 16px;
+margin-left: 10px;
+}
+
+.no-bullet-h4{
+color: white;
+font-size       : 16px;
+margin-left     : 10px;
+}
+
+.no-bullet {
+  list-style-type : none;
+  margin          : 8px;
+  font-size       : 13px;
+  padding         : 0;
+  padding-bottom  : 0px;
+  color           : white;
+  text-decoration : none;
+}
+
+li:hover{
+  text-decoration: underline; 
+}
+
+.socials{
+  /* flex-wrap: wrap; */
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 345px;
+}
+
+/* to make the images b/w when hovered over */
+.bw-image {
+  padding-left: 10px;
+    filter: grayscale(100%);
+    transition: filter 0.1s ease;
+  }
+
+  .image-1:hover .bw-image{
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
+
+  .image-2:hover .bw-image {
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
+  .image-3:hover .bw-image {
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
+  .image-4:hover .bw-image {
+    filter: grayscale(0%);
+    cursor: pointer;
+  }
+
+@media (max-width:1199px){  
+    .about-item {
+      flex: 1 1 50%;
+    }  
+}
+
+@media (max-width:768px){
+    .about-item {
+        flex: 50%;
+    }
+}
+
+.footer-container{
+  box-sizing: border-box;
+  width: 100vw;
+  background-color    : #212330;
+  color               : white;
+  border: 1px solid black;
+  font-size: 13px;
+  padding-left: 10px;
+  line-height: 0.7em;
+}
+.footer-item{
+  box-sizing: border-box;
+}
+  
+#sitemap-color{
+color: white;
+padding-left: 5px;
+}
+
+@media (min-width: 760px) {
+  .footer-container{
+    display: flex;
+    
+    }
+}
