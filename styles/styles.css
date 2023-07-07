@@ -767,7 +767,22 @@ text-decoration: none;
   max-width: fit-content;
   max-width: fit-content;
 }
+/* lower-view-r-work Anchor tag and its media query*/
+.lower-view-r-work{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  }
+.lower-view-r-work:hover{
+  text-decoration: underline;
+}
 
+@media (min-width:760px){
+  .lower-view-r-work{
+    display:none;
+  }
+}
 
 /* welcome Section */
 
@@ -1399,16 +1414,28 @@ text-decoration: none;
 
 .view-services{
   display:flex;
-  
   text-decoration: none;
+  justify-content: space-between;
 }
 .view-services:hover{
   text-decoration: none;
 }
+/* Remove text decoration unless hovered over */
+.view--our-work{
+  text-decoration: none;  
+  margin-right: 5vw;
+}
+.view--our-work:hover{
+  text-decoration: underline;
+}
+
 /* Remove View Our Work at 759px sp it displays below the cards */
 @media (max-width:760px){
   .view--our-work{
     display: none;
   }
-
+}
+/* Style the text adn position */
+.our-services{
+  margin-left: 5vw;
 }
