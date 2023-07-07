@@ -40,48 +40,48 @@ body  {
 /* Styling colored circles for each card */
 .car-1{
   background-color: var(--bespoke);
-  width: 65px;
-  height: 65px;
+  width: 75px;
+  height: 75px;
   border-radius:50%;
   margin-top: 10px;
 }
 .car-2{
-  background-color: #4183d7;
+  background-color: var(--itsupport);
   width: 65px;
   height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 .car-3{
-  background-color: #2ecc71;
+  background-color: var(--digmarket);
   width: 65px;
   height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 .car-4{
-  background-color: #d64541;
+  background-color: var(--telecoms);
   width: 65px;
   height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 .car-5{
-  background-color: #926fb1;
+  background-color: var(--webdesign);
   width: 65px;
   height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 .car-6{
-  background-color: #f62459;
+  background-color: var(--cyber);
   width: 65px;
   height: 65px;
   border-radius: 50%;
   margin-top: 10px;
 }
 .car-7{
-  background-color: #ce4125;
+  background-color: var(--developer);
   width: 65px;
   height: 65px;
   border-radius: 50%;
@@ -1088,7 +1088,20 @@ text-decoration: none;
       background-repeat: no-repeat;
       /* padding-top: 326px;  */
      }
-  
+
+  /* .journalist image with before */
+ .outer-container{
+  display: flex;
+  justify-content: space-between;
+ }
+  .inner-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+
+
 /* case-study image styling */
 
 .case-studies{
