@@ -1,4 +1,6 @@
-
+body  {
+  font-family: "Poppins", sans-serif;
+}
 /*   background-color: var(--bespoke);  */
 :root {
   --bespoke: #67809f; 
@@ -773,9 +775,13 @@ text-decoration: none;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  font-size: 1.6em;
+  color: black;
   }
 .lower-view-r-work:hover{
   text-decoration: underline;
+  font-size: 1.6em;
+  color: black;
 }
 
 @media (min-width:760px){
@@ -1424,9 +1430,12 @@ text-decoration: none;
 .view--our-work{
   text-decoration: none;  
   margin-right: 5vw;
+  font-size: 1.6em;
+  color: black;
 }
 .view--our-work:hover{
   text-decoration: underline;
+  color: black;
 }
 
 /* Remove View Our Work at 759px sp it displays below the cards */
@@ -1437,5 +1446,8 @@ text-decoration: none;
 }
 /* Style the text adn position */
 .our-services{
+  font-size: 2.6em;
+  font-weight: 500;
   margin-left: 5vw;
+  font-weight: bold;
 }
