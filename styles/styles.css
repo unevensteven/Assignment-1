@@ -911,9 +911,6 @@ text-decoration: none;
   }
 
 
-
-
-
 /* Latest News Section styling ===========   */
   
  /* .latest-news{     ====================== container 
@@ -925,24 +922,34 @@ text-decoration: none;
     /*Style the three buttons in the articles to read more  */
     .btn-1{
       color: white;
-      background-color: rgb(117, 190, 184);
-      
+      background-color:#2DCC71;
+      border-radius: 3px;
+      padding:10px;
+      border: none;
+      text-decoration: none;
     }
-
     .btn-2{
       color: white;
-      background-color:  rgb(117, 190, 184);
+      background-color: #2DCC71;
+      border-radius: 3px;
+      padding:10px;
+      border: none;
+      text-decoration: none;
     }
     .btn-3{
       color: white;
       background-color: rgb(150, 109, 150);
+      border-radius: 3px;
+      padding:10px;
+      border: none;
+      text-decoration: none;
     }
 
    .partial-line{
     border-top: 2px solid black;
-    width: 250px;
-    margin-left: 40px;
-    
+    width: 170px;
+    align-self: center;
+    margin-left: 10%;   
    }
 
    /* Display .latest-news as a column upto 759px */
@@ -987,19 +994,18 @@ text-decoration: none;
 
     .article {  /* ========================== card */
       color: black;
-      
-      min-height: 65vh;
+      min-height: 60vh;
       max-height: 91vh;
-      transform: translateY(8px);
+      transform: translateY(5px);
       transition: transform 0.8s ease;
       margin: 30px;
-      border:1px solid gray;
+      border:10px solid gray;
       border-radius: 4px;
     }
     
     .article:hover{
       cursor: pointer;
-      transform: translateY(-8px);
+      transform: translateY(-5px);
       transition: transform 0.8s ease;
     }
   
@@ -1013,8 +1019,7 @@ text-decoration: none;
       background-image: url(../img/Now-hiring-digital-marketing.jpg);
       background-size: 100% auto; 
       background-repeat: no-repeat;
-      padding-top: 330px;  
-      display: flex;
+      padding-top: 340px;  
       justify-content: center;
       align-items: center; 
     }
@@ -1024,14 +1029,14 @@ text-decoration: none;
       background-image: url(../img/hiring-ppc-specialist.png);
       background-size: 100% auto; 
       background-repeat: no-repeat;
-      padding-top: 330px; 
+      padding-top: 340px; 
      }
 
      .article-3{
       background-image: url(../img/inceni-case-study.png);
       background-size: 100% auto; 
       background-repeat: no-repeat;
-      padding-top: 330px; 
+      padding-top: 340px; 
      }
   
 /* case-study image styling */
@@ -1330,9 +1335,9 @@ li:hover{
 
 /* to make the images b/w when hovered over */
 .bw-image {
-  padding-left: 10px;
+  padding-left: 5px;
     filter: grayscale(100%);
-    transition: filter 0.1s ease;
+    transition: filter 0.2s ease;
   }
 
   .image-1:hover .bw-image{
@@ -1353,12 +1358,12 @@ li:hover{
     cursor: pointer;
   }
 
+  /* Social media icons  */
 @media (max-width:1199px){  
     .about-item {
       flex: 1 1 50%;
     }  
 }
-
 @media (max-width:768px){
     .about-item {
         flex: 50%;
