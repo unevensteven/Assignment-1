@@ -349,9 +349,9 @@ body  {
   cursor: pointer;
   background-color: gray;
 }
-.uh-item > .uh-item-2:hover{
+.uh-item-2:hover{
+  
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .netmatters-search-bar{
@@ -702,7 +702,7 @@ text-decoration: none;
     font-size: 0.8em;
   }
 }
-@media (max-width:979px){
+@media (max-width:989px){
   .hero-text{
     line-height: 30px;
   }
@@ -719,12 +719,12 @@ text-decoration: none;
 
 @media (min-width:990px){
   .hero-image{
-    margin-top: -90px
+    margin-top: -115px
   }
 }
   @media (max-width:989px){
     .hero-image{
-      margin-top: -90px
+      margin-top: -115px
     }
   }
 @media (max-width:759px){
@@ -919,6 +919,8 @@ text-decoration: none;
       padding:10px;
       border: none;
       text-decoration: none;
+      margin-top: -10px;
+      margin-bottom: 10px;
     }
     .btn-2{
       color: white;
@@ -927,6 +929,8 @@ text-decoration: none;
       padding:10px;
       border: none;
       text-decoration: none;
+      margin-top: -10px;
+      margin-bottom: 10px;
     }
     .btn-3{
       color: white;
@@ -935,37 +939,88 @@ text-decoration: none;
       padding:10px;
       border: none;
       text-decoration: none;
+      margin-top: -10px;
+      margin-bottom: 10px;
     }
 
    .partial-line{
-    border-top: 2px solid black;
-    width: 170px;
+    border-top: 1px solid rgb(175, 173, 173);
     align-self: center;
-    margin-left: 10%;   
+    min-width:400px;
    }
 
-   @media (min-width:759px){
+  .latest-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+   @media (max-width:759px){
+    .latest-news{
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .article-1{
+      padding-top: 320px;
+    }
+    .article-2{
+      padding-top: 320px;
+    }
+    .article-3{
+      padding-top: 320px;
+    }
+   }
+
+   @media (min-width:760px){
     .latest-news{
       display:flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: space-around;
     }
     .article{
-      width: 350px;
+      width: 330px;
     }
     .news3{
       display: none;
+    }
+    .partial-line{
+      min-width: 260px;
+    }
+    .article-1{
+      padding-top: 200px;
+    }
+    .article-2{
+      padding-top: 200px;
+    }
+    .article-3{
+      padding-top: 200px;
     }
    }
 
    @media (min-width:990px) {
+    
     .article{
-    width: 450px
+    width: 440px
     }
     .news3{
       display: none;
     }
+    .partial-line{
+      min-width: 380px;
+    }
+    .article-1{
+      padding-top: 240px;
+    }
+    .article-2{
+      padding-top: 240px;
+    }
+    .article-3{
+      padding-top: 240px;
+    }
   }
+
   @media(min-width:1275px){
     .article{
       width: 380px
@@ -973,53 +1028,32 @@ text-decoration: none;
       .news3{
         display: block;
       }
+      .partial-line{
+        min-width: 340px;
+      }
+      .article-1{
+        padding-top: 220px;
+      }
+      .article-2{
+        padding-top: 220px;
+      }
+      .article-3{
+        padding-top: 220px;
+      }
     }
 
-
-   /* Display .latest-news as a column upto 759px 
-   @media (max-width:759px){
-    .latest-news{
-      flex-direction: column;
-    }
-   }
+.card-title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25px;
   
-   @media (min-width:760px) and (max-width:1239px){
-    .latest-news{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-    }
-    .latest-news > .article:nth-child(3) {
-      display: none;
-    }
-    .article{
-      width:345px;
-    }
-    .article-1{
-      width:345px;
-    }
-    .article-info{
-      width:395px;
-    }
-  }
-
-  @media screen and (min-width: 1240px) {
-    .latest-news{
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .article {
-      flex-basis: 1 0 30%;    
-   }
-  .article-1{
-    max-width:454px;
-  }
-}*/
+}
 
     .article {  /* ========================== card */
       color: black;
       min-height: 60vh;
-      max-height: 91vh;
+      max-height: 85vh;
       max-width:600px;
       transform: translateY(5px);
       transition: transform 0.8s ease;
@@ -1034,34 +1068,25 @@ text-decoration: none;
       transition: transform 0.8s ease;
     }
   
-    .article-info{  /* ====================== card.image  */
-      height:100px;
-      margin-bottom: 1px;
-      border: 1px solid red;
-    }
-  
     .article-1{
       background-image: url(../img/Now-hiring-digital-marketing.jpg);
       background-size: 100% auto; 
       background-repeat: no-repeat;
-      padding-top: 340px;  
-      justify-content: center;
-      align-items: center; 
+      
     }
-
 
     .article-2{
       background-image: url(../img/hiring-ppc-specialist.png);
       background-size: 100% auto; 
       background-repeat: no-repeat;
-      padding-top: 340px; 
+     
      }
 
      .article-3{
       background-image: url(../img/inceni-case-study.png);
       background-size: 100% auto; 
       background-repeat: no-repeat;
-      padding-top: 340px; 
+      /* padding-top: 326px;  */
      }
   
 /* case-study image styling */
