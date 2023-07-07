@@ -795,7 +795,8 @@ text-decoration: none;
 
 .welcome-background-colour{
   background-color: #333544;
-  width: 100vw;
+  width: 100%;
+  padding-left: 5vw;
 }
 .welcome{
   display: inline-block;
@@ -1069,8 +1070,8 @@ text-decoration: none;
 @media (min-width:960px){
   .newsletter-row{
     display: flex;
-    width: 720px;
-    margin-left: 4vw;
+    width: 700px;
+   margin-left: 2vw; 
   }
   .sign-up{
     flex-direction: row;
@@ -1083,10 +1084,10 @@ text-decoration: none;
     height: 45px;
     border: 2px solid rgb(196, 194, 194);
     width: 450px;
-    background-color: #EBE6E6;
+    background-color:white;
   }
 }
-@media (min-width:1200px){
+@media (min-width:1220px){
   .email-newsletter-style{
     width: 565px;
     flex: 1;
@@ -1094,6 +1095,7 @@ text-decoration: none;
     margin-left: -20px;
     height: 45px;
     border: 2px solid rgb(196, 194, 194);
+    background-color:white;
   }
 }
 
@@ -1103,7 +1105,7 @@ text-decoration: none;
   /* ============================================= */
 
   .privacy-checkbox{
-    margin-left:6%;
+    margin-left:4%;
     appearance: none;
     width: 32px;
     height: 32px;
@@ -1146,7 +1148,7 @@ text-decoration: none;
     border: 2px solid rgb(196, 194, 194);
     width: 74vw;
     max-width: 720px;
-    background-color: #EBE6E6;
+    background-color: white;
   }
 }
 
@@ -1163,7 +1165,7 @@ text-decoration: none;
       box-shadow: 1px 1px 5px rgb(87, 170, 197), -2px -2px 5px rgb(87, 170, 197);
       outline: none;
       border-top: none;
-      background-color: #EBE6E6
+      background-color: white;
   }
     
   /* changes the color of the privacy policy link */
@@ -1187,8 +1189,7 @@ text-decoration: none;
 
   .about-container{
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-gap: 10px;
+    grid-template-rows: auto auto auto auto;
     background-color    : #333544;
     width: 100%;
   }
