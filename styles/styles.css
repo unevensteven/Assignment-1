@@ -910,15 +910,7 @@ text-decoration: none;
     background-color: #25A25A;
   }
 
-
-/* Latest News Section styling ===========   */
-  
- /* .latest-news{     ====================== container 
-      
-      justify-content: center;
-      margin-left: 8vw;  
-   }
-   */
+ 
     /*Style the three buttons in the articles to read more  */
     .btn-1{
       color: white;
@@ -952,7 +944,39 @@ text-decoration: none;
     margin-left: 10%;   
    }
 
-   /* Display .latest-news as a column upto 759px */
+   @media (min-width:759px){
+    .latest-news{
+      display:flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .article{
+      width: 350px;
+    }
+    .news3{
+      display: none;
+    }
+   }
+
+   @media (min-width:990px) {
+    .article{
+    width: 450px
+    }
+    .news3{
+      display: none;
+    }
+  }
+  @media(min-width:1275px){
+    .article{
+      width: 380px
+      }
+      .news3{
+        display: block;
+      }
+    }
+
+
+   /* Display .latest-news as a column upto 759px 
    @media (max-width:759px){
     .latest-news{
       flex-direction: column;
@@ -990,16 +1014,17 @@ text-decoration: none;
   .article-1{
     max-width:454px;
   }
-}
+}*/
 
     .article {  /* ========================== card */
       color: black;
       min-height: 60vh;
       max-height: 91vh;
+      max-width:600px;
       transform: translateY(5px);
       transition: transform 0.8s ease;
-      margin: 30px;
-      border:10px solid gray;
+      margin: 10px;
+      border:1px solid gray;
       border-radius: 4px;
     }
     
