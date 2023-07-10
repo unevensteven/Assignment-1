@@ -347,15 +347,30 @@ body  {
 }
 .uh-item-7{
   cursor: pointer;
-  background-color: gray;
+  
 }
 .uh-item-2:hover{
-  
   cursor: pointer;
+}
+.uh-item-7:hover{
+  text-decoration: underline;
 }
 
 .netmatters-search-bar{
   margin-left: 20px;
+  position: relative;
+  max-width: 655px;
+}
+.netmatters-search-bar input {
+  padding-right: 30px; /* Add space for the icon */
+}
+.netmatters-search-bar > .icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  font-size: 25px;
+  pointer-events: none; /* Make sure the icon does not interfere with input interaction */
 }
 
 /* Media Queries to style upper header and show which items at which breakpoints */
@@ -768,6 +783,10 @@ text-decoration: none;
 .awards img{
   max-width: fit-content;
   max-width: fit-content;
+  filter: grayscale(100%);
+}
+.awards:hover > img{
+  filter: grayscale(0%);
 }
 /* lower-view-r-work Anchor tag and its media query*/
 .lower-view-r-work{
@@ -1112,6 +1131,11 @@ text-decoration: none;
 .case-studies img{
   max-width: fit-content;
   max-width: fit-content;
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+}
+.case-studies:hover > img{
+  filter: grayscale(0%);
 }
 
 /* Styling for the Email Sign-up sections styling */
