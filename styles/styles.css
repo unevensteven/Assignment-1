@@ -347,8 +347,24 @@ body  {
 }
 .uh-item-7{
   cursor: pointer;
-  
 }
+/* Adjust the color of an image when I hover over it */
+    
+.uh-item-7 img {
+  transition: filter 0.3s ease;
+}
+.uh-item-7:hover > img {
+  filter: brightness(90%);
+}
+.uh-item-3 img {
+  transition: filter 0.3s ease;
+}
+.uh-item-3:hover > img {
+  filter: brightness(80%);
+}
+
+
+
 .uh-item-2:hover{
   cursor: pointer;
 }
@@ -357,17 +373,19 @@ body  {
 }
 
 .netmatters-search-bar{
-  margin-left: 20px;
   position: relative;
-  max-width: 655px;
+  display: flex;
+  align-items: center;
+  
 }
-.netmatters-search-bar input {
-  padding-right: 30px; /* Add space for the icon */
+.netmatters-search-bar > input {
+  flex: 1;
+  padding-right: 10px; /* Add space for the icon */
 }
 .netmatters-search-bar > .icon {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 20px;
   transform: translateY(-50%);
   font-size: 25px;
   pointer-events: none; /* Make sure the icon does not interfere with input interaction */
@@ -377,7 +395,6 @@ body  {
     @media (min-width:1250px) {
       .uh-container {
         padding: 1rem;
-        /* background-color: darkslategrey; */
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -387,7 +404,7 @@ body  {
       font-size: 2rem;
       line-height: 1.5rem;
       text-align: center;
-      color: #51aaa3;
+      color: black;
       margin: 0.375rem; 
       justify-content: space-between;
       }
@@ -405,6 +422,24 @@ body  {
         flex-basis: 10rem;
         flex-grow: 1;
         order: 3;
+      }
+      
+      .uh-item-4{
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .uh-item-4 input {
+        flex: 1;
+        padding-right: 30px; 
+      }
+      .uh-item-4 > .icon {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 25px;
+        pointer-events: none; 
       }
       .uh-item-4 {
         flex-basis:10rem;
@@ -426,7 +461,6 @@ body  {
     @media (min-width:980px) and (max-width:1249px){
       .uh-container {
         padding: 1rem;
-        /* background-color: darkslategrey; */
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -473,7 +507,7 @@ body  {
   }
 }
 
-
+/* Search Bar in the Upper header 'uh-item-4' */
 @media (min-width:760px) and (max-width:979px){
   .uh-container {
     padding: 1rem;
@@ -495,6 +529,30 @@ body  {
   flex-grow: 1;
   order: 1;
 }
+/* inserted here for the search bar icon */
+.uh-item-4{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.uh-item-4 input {
+  flex: 1;
+  padding-right: 30px; /* Add space for the icon */
+}
+.uh-item-4 .icon {
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  padding:12px;
+  color: black;
+  transform: translateY(-50%);
+  font-size: 25px;
+  pointer-events: none; /* Make sure the icon does not interfere with input interaction */
+}
+
+
+
+
 .uh-item-4{
   flex-basis: 12rem;
   flex-grow: 1;
@@ -552,7 +610,7 @@ body  {
         background-color: rgb(235, 230, 230);
       }
       input:focus{
-        box-shadow: 1px 1px 10px 3px lightblue;
+        box-shadow: none;
       }
       /* Hide these items when <759px */
       .uh-item-4,
@@ -563,19 +621,33 @@ body  {
       }
     }
 
-
     .uh-item-4 input[type=text] {
       border: 2px solid rgb(197, 197, 197);
       outline: none;
       height: 45px;
       width: 90%;
-      background-color: rgb(235, 230, 230);
+      background-color:white;
     }
+    .uh-item-4 .my-search-icon{
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+      background-image: url(../img/magnify_icon.png); /* Replace with your own image path */
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+    }
+    .uh-item-4:hover .my-search-icon{
+      opacity: 0.7;
+    }
+    
 
     .uh-item-4 input[type=text]:hover{
-      box-shadow: 1px 1px 3px 1px rgb(135, 186, 253);
+      box-shadow: 1px 1px 5px #4183d7, -1px -1px 5px #4183d7;
     }
-
 
 
 /* lower header code */
@@ -1254,7 +1326,7 @@ text-decoration: none;
 /* The input style boxes when they have focus */
   /* input[type=text]:focus { */
     .email-newsletter-style:focus{
-      box-shadow: 1px 1px 5px rgb(87, 170, 197), -2px -2px 5px rgb(87, 170, 197);
+      box-shadow: 1px 1px 5px #4183d7, -2px -2px 5px #4183d7;
       outline: none;
       border-top: none;
       background-color: white;
